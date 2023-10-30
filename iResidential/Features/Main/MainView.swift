@@ -24,6 +24,7 @@ struct MainView: View {
             VStack {
                 TabView(selection: $selectedTab) {
                     ForEach(MainTab.allCases, id: \.rawValue) { tab in
+                        // TODO: - add views
                         HStack {
                             Image(systemName: tab.rawValue)
                             Text("\(tab.rawValue.uppercased())")
